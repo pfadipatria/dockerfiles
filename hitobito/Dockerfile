@@ -12,6 +12,4 @@ WORKDIR /home/hitobito/hitobito
 RUN rvm 1.9.3 exec bundle config build.nokogiri --use-system-libraries && \
   rvm 1.9.3 exec bundle install
 
-USER hitobito
-
 CMD ["rvm", "1.9.3", "exec", "rails", "server"]
