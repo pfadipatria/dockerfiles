@@ -1,6 +1,6 @@
 FROM pfadipatria/ruby-1.9.3
 
-RUN useradd hitobito
+RUN useradd hitobito -m
 WORKDIR /home/hitobito
 
 RUN git clone https://github.com/pfadipatria/hitobito.git --depth 1 && \
@@ -11,5 +11,7 @@ WORKDIR /home/hitobito/hitobito
 
 RUN rvm 1.9.3 exec bundle config build.nokogiri --use-system-libraries && \
   rvm 1.9.3 exec bundle install
+
+USER hitobito
 
 CMD ["rvm", "1.9.3", "exec", "rails", "server"]
