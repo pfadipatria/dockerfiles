@@ -26,3 +26,6 @@ cloudbees-folder latest
 matrix-auth latest
 gravatar latest
 console-column-plugin latest
+ruby latest
+rake latest
+rvm latest
