@@ -4,7 +4,6 @@ mdb:
    - 80
   links:
    - elasticsearch:es
-  env_file: /etc/mdb-prod.config
   environment:
     RAILS_ENV: production
     RAILS_HOST_NAME: mdb.pfadipatria.com
