@@ -1,11 +1,4 @@
 jenkins:
   image: jenkins
-  volumes_from:
-   - data
   ports:
    - 8080
-data:
-  image: busybox
-  volumes:
-   - /var/jenkins_home
-  command: true
