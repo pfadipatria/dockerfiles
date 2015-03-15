@@ -1,6 +1,6 @@
 jenkins:
   image: jenkins
-  volumes-from:
+  volumes_from:
    - data
   ports:
    - 8080
