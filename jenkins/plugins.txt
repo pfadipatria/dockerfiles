@@ -11,3 +11,5 @@ git latest
 github-api latest
 github latest
 copyartifact latest
+credentials latest
+credentials-binding latest
