@@ -1,2 +1,0 @@
-# remap user permissions
-bindfs#/mnt/docker.sock   /var/run/docker.sock    fuse    uid=1000,gid=1000    0    0

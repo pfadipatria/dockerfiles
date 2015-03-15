@@ -2,7 +2,6 @@ jenkins:
   image: pfadipatria/jenkins
   volumes:
    - "/usr/bin/docker:/usr/bin/docker"
-   - "/var/run/docker.sock:/mnt/docker.sock"
    - "/var/lib/jenkins:/var/jenkins_home"
   expose:
    - 8080
