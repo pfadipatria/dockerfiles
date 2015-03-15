@@ -18,3 +18,7 @@ credentials-binding latest
 discard-old-build latest
 managed-scripts latest
 envinject latest
+instant-messaging latest
+log-command latest
+mailer latest
+jabber latest
