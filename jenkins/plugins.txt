@@ -5,4 +5,6 @@ docker-plugin latest
 docker-build-step latest
 docker-build-publish latest
 dockerhub latest
+git latest
+github-api latest
 github latest
