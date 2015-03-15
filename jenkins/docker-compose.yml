@@ -1,4 +1,4 @@
 jenkins:
-  image: jenkins
+  image: pfadipatria/jenkins
   ports:
    - 8080
