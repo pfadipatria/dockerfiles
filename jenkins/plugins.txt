@@ -29,3 +29,6 @@ console-column-plugin latest
 ruby latest
 rake latest
 rvm latest
+jquery latest
+parameterized-trigger latest
+build-pipeline-plugin latest
