@@ -1,5 +1,5 @@
 ruby:
-  image: pfadipatria/ruby-1.9.3-jenkins
+  image: pfadipatria/ruby-1.9.3-jenkins-slave
   volumes:
    - "/var/lib/jenkins/slaves/ruby-1.9.3:/home/jenkins"
   expose:
