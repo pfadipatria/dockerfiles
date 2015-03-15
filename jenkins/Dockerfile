@@ -12,6 +12,7 @@ USER root
 
 RUN apt-get update && \
   apt-get install bindfs && \
+  apt-get clean && \
   cat /fstab.append >> /etc/fstab && \
   echo 'fuse' >> /etc/modules && \
   rm /fstab.append
