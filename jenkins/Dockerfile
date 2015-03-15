@@ -1,5 +1,5 @@
 FROM jenkins
 
-COPY plugins.txt
+COPY plugins.txt /plugins.txt
 
-RUN plugins.sh plugins.txt
+RUN /usr/share/jenkins/plugins.sh /plugins.txt
