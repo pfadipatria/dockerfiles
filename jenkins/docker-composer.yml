@@ -1,0 +1,9 @@
+jenkins:
+  image: jenkins
+  volumes-from:
+   - data
+data:
+  image: busybox
+  volumes:
+   - /var/jenkins_home
+  command: true
