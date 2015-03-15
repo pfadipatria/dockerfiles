@@ -1,0 +1,3 @@
+docker-plugin latest
+docker-build-step latest
+docker-build-publish latest
