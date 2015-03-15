@@ -2,5 +2,6 @@ jenkins:
   image: pfadipatria/jenkins
   volumes:
    - "/var/run/docker.sock:/var/run/docker.sock"
+   - /var/jenkins_home
   ports:
    - 8080
