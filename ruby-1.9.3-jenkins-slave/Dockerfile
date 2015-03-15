@@ -8,4 +8,4 @@ RUN apt-get update && \
  
 EXPOSE 22
 
-ENTRYPOINT ["/usr/bin/sshd", "-D"]
+ENTRYPOINT ["/usr/sbin/sshd", "-D"]
