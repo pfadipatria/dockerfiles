@@ -2,6 +2,8 @@ jenkins:
   image: jenkins
   volumes-from:
    - data
+  ports:
+   - 8080
 data:
   image: busybox
   volumes:
