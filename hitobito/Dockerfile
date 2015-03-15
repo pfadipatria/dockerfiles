@@ -11,5 +11,7 @@ WORKDIR /home/hitobito/hitobito
 
 RUN rvm 1.9.3 exec bundle config build.nokogiri --use-system-libraries && \
   rvm 1.9.3 exec bundle install
+  
+EXPOSE 80
 
-CMD ["rvm", "1.9.3", "exec", "rails", "server"]
+CMD ["rvm", "1.9.3", "exec", "rails", "server", "-p", "80"]
