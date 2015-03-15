@@ -1,6 +1,7 @@
 jenkins:
   image: pfadipatria/jenkins
   volumes:
+   - "/usr/bin/docker:/usr/bin/docker"
    - "/var/run/docker.sock:/var/run/docker.sock"
    - "/var/lib/jenkins:/var/jenkins_home"
   ports:
