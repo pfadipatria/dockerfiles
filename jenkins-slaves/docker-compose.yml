@@ -1,12 +1,12 @@
 ruby:
   image: pfadipatria/ruby-1.9.3-jenkins
   volumes:
-   - "/var/lib/jenkins:/home/jenkins"
+   - "/var/lib/jenkins/slaves/ruby-1.9.3:/home/jenkins"
   expose:
    - 22
 rubyamb:
   image: svendowideit/ambassador
   links:
-   - "jenkins:jenkins"
+   - "ruby:ruby"
   ports:
    - "2222:22"
