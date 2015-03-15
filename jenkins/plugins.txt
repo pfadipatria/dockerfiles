@@ -16,3 +16,4 @@ config-file-provider latest
 credentials latest
 credentials-binding latest
 discard-old-build latest
+managed-scripts latest
