@@ -13,3 +13,4 @@ github latest
 copyartifact latest
 credentials latest
 credentials-binding latest
+discard-old-build latest
