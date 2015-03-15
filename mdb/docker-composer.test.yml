@@ -1,0 +1,29 @@
+mdb:
+  image: pfadipatria/hitobito
+  ports:
+   - 80
+  links:
+   - elasticsearch:es
+  environment:
+    RAILS_ENV: prod
+    RAILS_HOST_NAME: mdb-test.pfadipatria.com
+    RAILS_HOST_SSL:
+    RAILS_SECRET_TOKEN:
+    RAILS_DB_NAME: mdb-test
+    RAILS_DB_USERNAME: mdb-test
+    RAILS_DB_PASSWORD:
+    RAILS_DB_HOST: 
+    RAILS_DB_PORT: 3306
+    RAILS_DB_ADAPTER: mysql
+    RAILS_MAIL_DELIVERY_METHOD:
+    RAILS_MAIL_DELIVERY_CONFIG:
+    RAILS_MAIL_PERFORM_DELIVERIES:
+    RAILS_MAIL_PERFORM_DELIVERIES:
+    RAILS_MAIL_RETRIEVER_TYPE:
+    RAILS_MAIL_RETRIEVER_CONFIG:
+    RAILS_SPHINX_PORT:
+    RAILS_AIRBRAKE_API_KEY:
+    RAILS_AIRBRAKE_HOST:
+    RAILS_AIRBRAKE_PORT:
+elasticsearch:
+  image: elasticsearch
