@@ -1,7 +1,5 @@
 mdb:
   image: pfadipatria/hitobito
-  ports:
-   - 80
   links:
    - elasticsearch:es
   environment:
@@ -27,3 +25,9 @@ mdb:
     RAILS_AIRBRAKE_PORT:
 elasticsearch:
   image: elasticsearch
+ambassador:
+  image: svendowideit/ambassador
+  links:
+   - "mdb:mdb"
+  ports:
+   - "8081:80"
