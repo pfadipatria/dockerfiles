@@ -10,7 +10,8 @@ COPY fstab /fstab.append
 
 USER root
 
-RUN apt-get install bindfs && \
+RUN apt-get update && \
+  apt-get install bindfs && \
   cat /fstab.append >> /etc/fstab && \
   echo 'fuse' >> /etc/modules && \
   rm /fstab.append
