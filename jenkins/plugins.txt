@@ -22,3 +22,5 @@ instant-messaging latest
 log-command latest
 mailer latest
 jabber latest
+cloudbees-folder latest
+matrix-auth latest
