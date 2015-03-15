@@ -5,7 +5,7 @@ mdb:
   links:
    - elasticsearch:es
   environment:
-    RAILS_ENV: prod
+    RAILS_ENV: production
     RAILS_HOST_NAME: mdb-test.pfadipatria.com
     RAILS_HOST_SSL:
     RAILS_SECRET_TOKEN:
@@ -14,7 +14,7 @@ mdb:
     RAILS_DB_PASSWORD:
     RAILS_DB_HOST: 
     RAILS_DB_PORT: 3306
-    RAILS_DB_ADAPTER: mysql
+    RAILS_DB_ADAPTER: mysql2
     RAILS_MAIL_DELIVERY_METHOD:
     RAILS_MAIL_DELIVERY_CONFIG:
     RAILS_MAIL_PERFORM_DELIVERIES:
