@@ -24,3 +24,5 @@ mailer latest
 jabber latest
 cloudbees-folder latest
 matrix-auth latest
+gravatar latest
+console-column-plugin latest
