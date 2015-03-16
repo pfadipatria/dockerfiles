@@ -32,3 +32,4 @@ rvm latest
 jquery latest
 parameterized-trigger latest
 build-pipeline-plugin latest
+delivery-pipeline-plugin latest
