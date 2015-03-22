@@ -34,3 +34,4 @@ parameterized-trigger:latest
 build-pipeline-plugin:latest
 delivery-pipeline-plugin:latest
 promoted-builds:latest
+reverse-proxy-auth-plugin:latest
