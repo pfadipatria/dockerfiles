@@ -7,8 +7,8 @@ mdb:
     RAILS_HOST_NAME: mdb-test.pfadipatria.com
     RAILS_HOST_SSL: false
     RAILS_SECRET_TOKEN:
-    RAILS_DB_NAME: mdb-test
-    RAILS_DB_USERNAME: mdb-test
+    RAILS_DB_NAME: mdb_test
+    RAILS_DB_USERNAME: mdb_test
     RAILS_DB_PASSWORD:
     RAILS_DB_HOST: mysql02
     RAILS_DB_PORT: 3306
