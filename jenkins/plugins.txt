@@ -14,6 +14,7 @@ copyartifact:latest
 plain-credentials:latest
 config-file-provider:latest
 credentials:latest
+workflow-step-api:latest
 credentials-binding:latest
 discard-old-build:latest
 managed-scripts:latest
@@ -27,6 +28,7 @@ matrix-auth:latest
 gravatar:latest
 console-column-plugin:latest
 ruby:latest
+ruby-runtime:latest
 rake:latest
 rvm:latest
 jquery:latest
