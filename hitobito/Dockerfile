@@ -6,6 +6,8 @@ WORKDIR /home/hitobito
 RUN git clone https://github.com/pfadipatria/hitobito.git --depth 1 && \
   git clone https://github.com/pfadipatria/hitobito_pbs.git --depth 1 && \
   git clone https://github.com/pfadipatria/hitobito_patria.git --depth 1
+  
+ADD Wagonfile /home/hitobito/hitobito/Wagonfile
 
 WORKDIR /home/hitobito/hitobito
 
