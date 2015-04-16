@@ -31,7 +31,7 @@ mdb:
     RAILS_LDAP_ADMIN_PASSWORD:
     RAILS_LDAP_SSL:
 thinkingsphinx:
-  image: centurylink/sphinx
+  image: centurylink/sphinx:2.1.9.02
 ambassador:
   image: svendowideit/ambassador
   links:
