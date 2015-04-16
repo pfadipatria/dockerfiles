@@ -12,7 +12,9 @@ ADD Wagonfile /home/hitobito/hitobito/Wagonfile
 WORKDIR /home/hitobito/hitobito
 
 RUN rvm 1.9.3 exec bundle config build.nokogiri --use-system-libraries && \
-  rvm 1.9.3 exec bundle install
+  rvm 1.9.3 exec bundle install && \
+  sed -i 's/config.assets.compile = false/config.assets.compile = true/g' config/environments/production.rb && \
+  rvm 1.9.3 exec bundle exec rake assets:precompile
   
 EXPOSE 80
 
