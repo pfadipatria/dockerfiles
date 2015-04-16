@@ -2,6 +2,8 @@ mdb:
   image: pfadipatria/hitobito
   links:
    - thinkingsphinx:ts
+  volumes_from:
+   - thinkinglocalconf
   environment:
     RAILS_ENV: production
     RAILS_HOST_NAME: mdb-test.pfadipatria.com
@@ -32,6 +34,8 @@ mdb:
     RAILS_LDAP_SSL:
 thinkingsphinx:
   image: centurylink/sphinx:2.1.9.02
+thinkinglocalconf:
+  image: pfadipatria/ts-config
 ambassador:
   image: svendowideit/ambassador
   links:
