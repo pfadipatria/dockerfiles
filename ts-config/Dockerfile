@@ -1,5 +1,5 @@
-FROM tianon/true
+FROM cogniteev/echo
 
 VOLUME /usr/local/etc/
 
-CMD ["/true"]
+CMD ["/bin/echo", "Creating ts-config volume container"]
