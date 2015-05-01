@@ -32,8 +32,11 @@ mdb:
     RAILS_LDAP_ADMIN_USER:
     RAILS_LDAP_ADMIN_PASSWORD:
     RAILS_LDAP_SSL:
+    RAILS_SPHINX_ADDRESS: ts
 thinkingsphinx:
   image: centurylink/sphinx:2.1.9.02
+  volumes_from:
+   - thinkinglocalconf
 thinkinglocalconf:
   image: pfadipatria/ts-config
 ambassador:
