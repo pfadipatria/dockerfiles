@@ -10,12 +10,12 @@ thinkingsphinx:
   extends:
     file: common.yml
     service: thinkingsphinx
+  volumes_from:
+   - thinkinglocalconf
 thinkinglocalconf:
   extends:
     file: common.yml
     service: thinkinglocalconf
-  volumes_from:
-   - thinkinglocalconf
 ambassador:
   extends:
     file: common.yml
