@@ -1,0 +1,26 @@
+mdb:
+  extends:
+    file: common.yml
+    service: mdb
+  volumes_from:
+   - thinkinglocalconf
+  links:
+   - thinkingsphinx:ts
+thinkingsphinx:
+  extends:
+    file: common.yml
+    service: thinkingsphinx
+thinkinglocalconf:
+  extends:
+    file: common.yml
+    service: thinkinglocalconf
+  volumes_from:
+   - thinkinglocalconf
+ambassador:
+  extends:
+    file: common.yml
+    service: ambassador
+  links:
+   - "mdb:mdb"
+  ports:
+   - "8081:80"
