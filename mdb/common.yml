@@ -31,6 +31,7 @@ mdb:
     RAILS_SPHINX_ADDRESS:
 thinkingsphinx:
   image: centurylink/sphinx:2.1.9.02
+  command: ./searchd.sh
 thinkinglocalconf:
   image: pfadipatria/ts-config
 ambassador:
