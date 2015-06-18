@@ -1,9 +1,5 @@
 mdb:
   image: pfadipatria/hitobito
-  links:
-   - thinkingsphinx:ts
-  volumes_from:
-   - thinkinglocalconf
   environment:
     RAILS_ENV: production
     RAILS_HOST_NAME: mdb-test.pfadipatria.com
@@ -35,13 +31,7 @@ mdb:
     RAILS_SPHINX_ADDRESS: ts
 thinkingsphinx:
   image: centurylink/sphinx:2.1.9.02
-  volumes_from:
-   - thinkinglocalconf
 thinkinglocalconf:
   image: pfadipatria/ts-config
 ambassador:
   image: svendowideit/ambassador
-  links:
-   - "mdb:mdb"
-  ports:
-   - "8081:80"
