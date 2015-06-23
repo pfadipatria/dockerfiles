@@ -1,0 +1,17 @@
+errbit:
+  image: centurylinklabs/errbit:0.3.0-dev
+  environment:
+    ERRBIT_HOST:
+    ERRBIT_PROTOCOL:
+    ERRBIT_PORT:
+    RAILS_ENV:
+    RACK_ENV:
+    ERRBIT_MAIL_FROM:
+    EMAIL_DELIVERY_METHOD:
+  links:
+    - mongodb:mongodb
+  ports:
+    - "8084:3000"
+mongodb:
+   image: mongo
+   command: --smallfiles
