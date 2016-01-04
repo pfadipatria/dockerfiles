@@ -3,5 +3,5 @@ jenkins:
   volumes:
    - "/usr/bin/docker:/usr/bin/docker"
    - "/var/lib/jenkins:/var/jenkins_home"
-  expose:
+  ports:
    - "8080:8080"
