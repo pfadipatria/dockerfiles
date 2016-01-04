@@ -4,10 +4,4 @@ jenkins:
    - "/usr/bin/docker:/usr/bin/docker"
    - "/var/lib/jenkins:/var/jenkins_home"
   expose:
-   - 8080
-ambassador:
-  image: svendowideit/ambassador
-  links:
-   - "jenkins:jenkins"
-  ports:
    - "8080:8080"
