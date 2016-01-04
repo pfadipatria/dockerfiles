@@ -6,6 +6,8 @@ mdb:
    - thinkinglocalconf
   links:
    - thinkingsphinx:ts
+  ports:
+   - "8082:80"
 thinkingsphinx:
   extends:
     file: common.yml
@@ -16,11 +18,3 @@ thinkinglocalconf:
   extends:
     file: common.yml
     service: thinkinglocalconf
-ambassador:
-  extends:
-    file: common.yml
-    service: ambassador
-  links:
-   - "mdb:mdb"
-  ports:
-   - "8082:80"

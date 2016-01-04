@@ -34,5 +34,3 @@ thinkingsphinx:
   command: ./searchd.sh
 thinkinglocalconf:
   image: pfadipatria/ts-config
-ambassador:
-  image: svendowideit/ambassador
